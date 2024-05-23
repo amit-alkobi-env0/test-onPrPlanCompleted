@@ -4,7 +4,7 @@ resource "null_resource" "null" {
   }
 }
 
-resource "null_resource" "null-2" {
+resource "null_resource" "null-2-modified" {
   provisioner "local-exec" {
     command = "printenv"
   }
