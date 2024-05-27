@@ -9,3 +9,9 @@ resource "null_resource" "null-test-cd-2" {
     command = "printenv"
   }
 }
+
+resource "null_resource" "null-test-cancell-deployment" {
+  provisioner "local-exec" {
+    command = "printenv"
+  }
+}
