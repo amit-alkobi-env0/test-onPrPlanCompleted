@@ -27,3 +27,10 @@ resource "null_resource" "null-test-cd-cancelled-4" {
     command = "printenv"
   }
 }
+
+resource "null_resource" "null-test-new-pr-3" {
+  provisioner "local-exec" {
+    command = "printenv"
+  }
+}
+
