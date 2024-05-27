@@ -1,0 +1,8 @@
+version: 2
+
+deploy:
+  steps:
+    terraformPlan:
+      before:
+        - name: "failure"
+          run: exit 1
