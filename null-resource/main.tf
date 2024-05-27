@@ -27,3 +27,9 @@ resource "null_resource" "null-test-cd-cancelled-4" {
     command = "printenv"
   }
 }
+
+resource "null_resource" "null-test-batch-comment" {
+  provisioner "local-exec" {
+    command = "printenv"
+  }
+}
