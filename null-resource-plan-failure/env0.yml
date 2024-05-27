@@ -4,5 +4,5 @@ deploy:
   steps:
     terraformPlan:
       before:
-        - name: "no failure"
-          run: exit 0
+        - name: "failure"
+          run: exit 1
