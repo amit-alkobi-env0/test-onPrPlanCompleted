@@ -33,3 +33,9 @@ resource "null_resource" "null-test-bulk-cancel" {
     command = "printenv"
   }
 }
+
+resource "null_resource" "null-test-cd-3" {
+  provisioner "local-exec" {
+    command = "printenv"
+  }
+}
