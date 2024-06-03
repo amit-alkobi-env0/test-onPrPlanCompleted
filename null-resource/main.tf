@@ -52,3 +52,8 @@ resource "null_resource" "null-test-cd-5" {
   }
 }
 
+resource "null_resource" "null-test-cd-6" {
+  provisioner "local-exec" {
+    command = "printenv"
+  }
+}
